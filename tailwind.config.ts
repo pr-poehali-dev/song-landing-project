@@ -25,24 +25,24 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#DC2626',
+					DEFAULT: '#BE185D',
 					foreground: '#FFFFFF'
 				},
 				secondary: {
-					DEFAULT: '#F59E0B',
-					foreground: '#1F2937'
-				},
-				accent: {
-					DEFAULT: '#059669',
+					DEFAULT: '#EC4899',
 					foreground: '#FFFFFF'
 				},
-				festive: {
-					gold: '#FFD700',
-					red: '#DC2626',
-					green: '#059669',
-					purple: '#7C3AED',
-					orange: '#EA580C',
-					silver: '#94A3B8'
+				accent: {
+					DEFAULT: '#F3E8FF',
+					foreground: '#7C2D92'
+				},
+				romantic: {
+					rose: '#F8BBD9',
+					blush: '#FECACA',
+					lavender: '#E9D5FF',
+					cream: '#FEF3C7',
+					sage: '#D1FAE5',
+					pearl: '#F8FAFC'
 				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
@@ -79,8 +79,8 @@ export default {
 			fontFamily: {
 				'playfair': ['Playfair Display', 'serif'],
 				'inter': ['Inter', 'sans-serif'],
-				'oswald': ['Oswald', 'sans-serif'],
-				'merriweather': ['Merriweather', 'serif']
+				'dancing': ['Dancing Script', 'cursive'],
+				'pacifico': ['Pacifico', 'cursive']
 			},
 			keyframes: {
 				'accordion-down': {
@@ -130,6 +130,18 @@ export default {
 				'glow': {
 					'0%, 100%': { boxShadow: '0 0 5px currentColor' },
 					'50%': { boxShadow: '0 0 20px currentColor, 0 0 30px currentColor' }
+				},
+				'gentle-float': {
+					'0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+					'50%': { transform: 'translateY(-5px) rotate(2deg)' }
+				},
+				'heart-beat': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.1)' }
+				},
+				'soft-glow': {
+					'0%, 100%': { boxShadow: '0 0 10px rgba(236, 72, 153, 0.3)' },
+					'50%': { boxShadow: '0 0 20px rgba(236, 72, 153, 0.6), 0 0 30px rgba(190, 24, 93, 0.4)' }
 				}
 			},
 			animation: {
@@ -142,7 +154,10 @@ export default {
 				'bounce-slow': 'bounce-slow 2s infinite',
 				'sparkle': 'sparkle 2s ease-in-out infinite',
 				'confetti': 'confetti 3s linear infinite',
-				'glow': 'glow 2s ease-in-out infinite'
+				'glow': 'glow 2s ease-in-out infinite',
+				'gentle-float': 'gentle-float 4s ease-in-out infinite',
+				'heart-beat': 'heart-beat 2s ease-in-out infinite',
+				'soft-glow': 'soft-glow 3s ease-in-out infinite'
 			}
 		}
 	},
